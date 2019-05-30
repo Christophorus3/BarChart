@@ -10,11 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet private var chartView: MacawChartView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        chartView.contentMode = .scaleAspectFit
     }
 
-
+    @IBAction func displayChartButtonTapped(_ sender: UIButton) {
+        MacawChartView.playAnimations()
+    }
+    
 }
 

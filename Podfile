@@ -6,5 +6,5 @@ target 'BarChart' do
   use_frameworks!
 
   # Pods for BarChart
-  pod "Macaw"
+  pod "Macaw", "0.9.5"
 end
